@@ -25,7 +25,7 @@ public class Main {
     macaco2.digerir();
     macaco2.digerir();*/
 
-    Vendedor vendedor = new Vendedor("Camila Vendedora", 123456789L, 10d, 5);
+    Vendedor vendedor = new Vendedor("Veronica Vendedora", 123456789L, 10d, 5);
     System.out.println(vendedor.calcularSalario());
 
     Consultor consultor = new Consultor("Consultor", 789456123L, 100.5d, 10);
