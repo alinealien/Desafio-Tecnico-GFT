@@ -63,7 +63,7 @@ public class CrapsDesafio {
             Random gerador = new Random();
 
             for(int i = 0; i < vetor.length; i++){
-                vetor[i] = gerador.nextInt(12) + 2;
+                vetor[i] = gerador.nextInt(10) + 2;
             }
 
             return vetor;
@@ -74,8 +74,8 @@ public class CrapsDesafio {
         int[] vDois = new int[tamanho];
         Random gerador = new Random();
 
-        for(int j = 2; j < vDois.length; j++){
-            vDois[j] = gerador.nextInt(12) + 2;
+        for(int j = 0; j < vDois.length; j++){
+            vDois[j] = gerador.nextInt(10) + 2;
         }
 
         return vDois;
