@@ -6,7 +6,16 @@ import desafios.funcionarios.Consultor;
 import desafios.funcionarios.Vendedor;
 
 public class Main {
-//NumeroReverso.numeroReverso();
+
+    public static void main(String[] args){
+
+        NumeroReverso.numeroReverso();
+
+
+
+    }
+
+   //NumeroReverso.numeroReverso();
 
     /*Macaco macaco1 = new Macaco();
     Macaco macaco2 = new Macaco();
@@ -25,10 +34,11 @@ public class Main {
     macaco2.digerir();
     macaco2.digerir();*/
 
-    //Vendedor vendedor = new Vendedor("Veronica Vendedora", 123456789L, 10d, 5);
-    //System.out.println(vendedor.calcularSalario());
+    /*Vendedor vendedor = new Vendedor("Camila Vendedora", 123456789L, 10d, 5);
+    System.out.println(vendedor.calcularSalario());
 
-    //Consultor consultor = new Consultor("Consultor", 789456123L, 100.5d, 10);
-    //System.out.println(consultor.calcularSalario());
+    Consultor consultor = new Consultor("Consultor", 789456123L, 100.5d, 10);
+    System.out.println(consultor.calcularSalario());*/
+
+
 }
-
