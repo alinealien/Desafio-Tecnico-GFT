@@ -28,21 +28,30 @@ public class CrapsDesafio {
         System.out.println(" ");
 
 
-        //Aqui ele mostra o vetor com 10 numeros aleatorios
         int[] v = gerarVetor(2);
         System.out.println(Arrays.toString(v) + " ");
+
+        int[] vDois = gerarVetorDois(2);
+
 
         int i;
         for (i = 0; i < v.length; i++) {
             if ((v[i] == 7) || (v[i] == 11)) {
                 System.out.println("VOCÊ GANHOU!");
+                break;
 
             } else if((v[i] == 2) || (v[i] == 3) || (v[i] == 12)){
                 System.out.println("VOCÊ PERDEU!");
+                break;
 
             }else if((v[i] == 4) || (v[i] == 5) || (v[i] == 6) || (v[i] == 8) || (v[i] == 9) || (v[i] == 10)){
 
                 System.out.println("VAMOS TENTAR NOVAMENTE?");
+                System.out.println(Arrays.toString(vDois) + " ");
+
+                if(vDois[i] == 7) {
+                    System.out.println(" VOCê PERDEU ");
+                }
             }
         }
     }
@@ -60,6 +69,18 @@ public class CrapsDesafio {
 
             return vetor;
         }
+
+    public static int[] gerarVetorDois(int tamanho) {
+
+        int[] vDois = new int[tamanho];
+        Random gerador = new Random();
+
+        for(int j = 0; j < vDois.length; j++){
+            vDois[j] = gerador.nextInt(12) + 2;
+        }
+
+        return vDois;
+    }
 
 
 
