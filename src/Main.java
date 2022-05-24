@@ -15,7 +15,9 @@ public class Main {
 
     }
 
-   //NumeroReverso.numeroReverso();
+    // TESTES
+
+   //NumeroReverso.numeroReverso(); OK
 
     /*Macaco macaco1 = new Macaco();
     Macaco macaco2 = new Macaco();
