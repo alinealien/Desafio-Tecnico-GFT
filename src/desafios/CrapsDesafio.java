@@ -47,8 +47,7 @@ public class CrapsDesafio {
 
 
             } else if((v[i] == 4) || (v[i] == 5) || (v[i] == 6) || (v[i] == 8) || (v[i] == 9) || (v[i] == 10)){
-                System.out.println("Vamos tentar Novamente? ");
-                System.out.println(Arrays.toString(vDois) + " ");
+                System.out.println("VAMOS TENTAR NOVAMENTE? "+ "\n" + Arrays.toString(vDois) + " ");
 
                 if(vDois[i] == 7){
                     System.out.println("VOCÊ PERDEU!");
@@ -64,7 +63,7 @@ public class CrapsDesafio {
             Random gerador = new Random();
 
             for(int i = 0; i < vetor.length; i++){
-                vetor[i] = gerador.nextInt(12) + 1;
+                vetor[i] = gerador.nextInt(12) + 2;
             }
 
             return vetor;
@@ -75,8 +74,8 @@ public class CrapsDesafio {
         int[] vDois = new int[tamanho];
         Random gerador = new Random();
 
-        for(int j = 0; j < vDois.length; j++){
-            vDois[j] = gerador.nextInt(12) + 1;
+        for(int j = 2; j < vDois.length; j++){
+            vDois[j] = gerador.nextInt(12) + 2;
         }
 
         return vDois;
